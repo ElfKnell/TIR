@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "user")
 @Data
-public class User  implements Serializable {
+public class User implements Serializable{
 
     @Id
     private String id;
