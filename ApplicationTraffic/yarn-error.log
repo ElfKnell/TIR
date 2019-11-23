@@ -1,0 +1,36 @@
+Arguments: 
+  /home/andrey/.nvm/versions/node/v12.10.0/bin/node /usr/share/yarn/bin/yarn.js add vue vue-resource
+
+PATH: 
+  /home/andrey/.nvm/versions/node/v12.10.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-11-oracle/bin:/usr/lib/jvm/java-11-oracle/db/bin:/usr/lib/jvm/java-11-oracle/bin:/usr/lib/jvm/java-11-oracle/db/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/andrey/TIRRestJava/ApplicationTraffic/package.json: Unexpected token ф in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  фн{
+    "name": "ApplicationTraffic",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

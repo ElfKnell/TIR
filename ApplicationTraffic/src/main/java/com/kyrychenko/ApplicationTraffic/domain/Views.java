@@ -1,5 +1,9 @@
 package com.kyrychenko.ApplicationTraffic.domain;
 
 public final class Views {
-    public interface IdName {}
+    public interface Id {}
+
+    public interface IdName extends Id {}
+
+    public interface FullMessage extends Id {}
 }

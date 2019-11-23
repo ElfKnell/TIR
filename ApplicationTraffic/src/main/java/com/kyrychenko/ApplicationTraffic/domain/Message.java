@@ -17,7 +17,7 @@ public class Message {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonView(Views.IdName.class)
+    @JsonView(Views.Id.class)
     private long id;
 
     @Length(max = 255, message = "Message too long")
@@ -25,6 +25,7 @@ public class Message {
     private String text;
 
     @Column(updatable = false)
+    @JsonView(Views.FullMessage.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-mm-dd HH:mm:ss")
     private LocalDateTime creationDate;
 
